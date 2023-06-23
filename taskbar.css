@@ -1,16 +1,17 @@
 body{
     margin: 0;
     padding: 0;
-    background: #e3edf7;
-    font-family: Arial, Helvetica, sans-serif;
+    background: white;
     width: 100%;
     height: 200vh;
+    /*font-family: 'plus' 'jarkata' 'sans';*/
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 .main{
 
-    background:#e3edf7;
+    background:white;
     width: 900px; ;
     height: 900px;
 }
@@ -23,7 +24,7 @@ body{
     align-items: center;
     border-radius: 8px;
     box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-                -6px -6px 10px -1px rgba(255,255,255,0.7);
+                -6px -6px 10px -1px rgba(57, 57, 57, 0.7);
     margin-left: 450px;
 }
 
@@ -43,10 +44,10 @@ body{
     width: 100%;
     padding: 10px;
     border-radius: 8px;
-    background: #e3edf7;
-    /*border: 1px solid gray;*/
-    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    background: white;
+    border: 2.5px solid rgba(146, 146, 146, 0.632);
+    /*box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(46, 45, 45, 0.7);*/
     margin-top: 30px;
     
 }
@@ -93,7 +94,7 @@ input[type="radio"]{
     width: 100%;
     padding: 10px;
     border-radius: 8px;
-    background: #e3edf7;
+    background: white;
     box-shadow: none;
     border: none;
     margin-top: 2px;
@@ -102,10 +103,10 @@ input[type="radio"]{
 .progress{
     width: 500px;
     height: 147px;
-    background:transparent;
-    margin-left: 287px;
+    background: transparent;
+    margin-left: 280px;
     display: flex;
-    margin-top: 20px;
+    margin-top: -114px;
 }
 h4{
     margin-top: 100px;
@@ -124,16 +125,22 @@ p{
     margin-left: -273px;
     margin-top: 126px;
 }
-input[type="checkbox"]{
-    /*appearance: none;
-    -webkit-appearance: none;*/
+/*input[type="checkbox"]{
+    appearance:none;
+    -webkit-appearance:none;
     height: 15px;
     width: 15px;
     background-color: green;
     border-radius: 5px;
     border: 1px solid gray;
     
-}
+}*/
+
+
+
+
+
+
 .first1{
     margin-top: 10px;
 }
@@ -179,34 +186,46 @@ h6{
 
 
 
-
 @media screen and (max-width:600px) {
 
 
-    .main{
-
-        background:#e3edf7;
-        width: 100%; ;
-        height: 100%;
-    }
     .maintask{
+
+
         margin: 60px auto;
         display: flex;
-        width:300px;
-        height:150vh;
+        width: 327px;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255,0.7);
+        margin-left: 62px;
+    }
+    .main{
+
+        background:white;
+        width: 100%; 
+        height: 100%
+    }
+   /* .maintask{
+        margin: 60px auto;
+        display: flex;
+        width:350px;
+        height:900px;
         justify-content: center;
         align-items: center;
         border-radius: 8px;
         box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-                    -6px -6px 10px -1px rgba(255,255,255,0.7);
-        margin-left: 2px
-    }
+                    -6px -6px 10px -1px rgba(57, 57, 57, 0.7);
+        margin-left:10px;
+    }*/
     
     .accordian{
         /*margin: 60px auto;*/
-        width:500px;
+        width:300px;
         /**margin-top: 200px;*/
-        margin-left: 250px;
+        margin-left: 358px;
         
     }
     .accordian ul{
@@ -218,10 +237,10 @@ h6{
         width: 100%;
         padding: 10px;
         border-radius: 8px;
-        background: #e3edf7;
-        /*border: 1px solid gray;*/
-        box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-                    -6px -6px 10px -1px rgba(255,255,255,0.7);
+        background: white;
+        border: 2.5px solid rgba(146, 146, 146, 0.632);
+        /*box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                    -6px -6px 10px -1px rgba(46, 45, 45, 0.7);*/
         margin-top: 30px;
         
     }
@@ -229,14 +248,14 @@ h6{
         display: flex;
         align-items: center;
         padding: 10px;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 500;
         cursor: pointer;
     }
     .level::before{
         content:'+';
-        margin-right: 10px;
-        font-size: 24px;
+        margin-right: 15px;
+        font-size: 10px;
         font-weight: 600;
     
     }
@@ -254,7 +273,7 @@ h6{
         margin-left: 0px;
     }
     .accordian input[type="radio"]:checked + .level + .content{
-        max-height: 400px;
+        max-height: 250px;
         padding: 10px 10px 20px;
     }
     .accordian input[type="radio"]:checked + .level::before{
@@ -268,62 +287,70 @@ h6{
         width: 100%;
         padding: 10px;
         border-radius: 8px;
-        background: #e3edf7;
+        background: white;
         box-shadow: none;
         border: none;
         margin-top: 2px;
     }
     /*change based on click*/
     .progress{
-        width: 500px;
+        width: 250px;
         height: 147px;
         background:transparent;
-        margin-left: 287px;
+        margin-left: 400px;
         display: flex;
-        margin-top: 20px;
+        margin-top: -151px;
     }
     h4{
         margin-top: 100px;
         padding-left: 13px;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 15px;
     }
     .keyboardimage{
-        width: 50px;
-        height: 50px;
+        width: 20px;
+        height: 20px;
         border-radius: 8px;
         margin-top: 100px;
     }
         
     p{
-        margin-left: -273px;
+        margin-left: -202px;
         margin-top: 126px;
+        font-size: 10px;
     }
-    input[type="checkbox"]{
-        /*appearance: none;
-        -webkit-appearance: none;*/
+    /*input[type="checkbox"]{
+        appearance:none;
+        -webkit-appearance:none;
         height: 15px;
         width: 15px;
         background-color: green;
         border-radius: 5px;
         border: 1px solid gray;
         
-    }
+    }*/
+    
+    
+    
+    
+    
+    
     .first1{
         margin-top: 10px;
     }
     .pbar{
-        width: 500px;
+        width: 250px;
         height: 100px;
         margin-left: 289px;
     }
     .p_outer{
-        width: 517px;
+        width: 310px;
         height: 5px;
         background: rgb(202, 200, 200);
+        margin-left: 120px;
     }
     .p_inner{
-        width: 300px;
+        width: 100px;
         height: 5px;
         background: green;
     }
@@ -334,25 +361,35 @@ h6{
     }
     .desc{
         display: flex;
+        margin-left: 124px;
+        width: 100%;
     }
     .date{
-        width: 500px;
+        width: 200px;
         height: 10px;
         display:flex;
-        align-items: end;
-        margin-left: 656px;
+        align-items: center;
+        margin-left: 953px;
     
     }
     h6{
-        padding: 0 10px;
+        padding: 0 5px;
     
     }
     .tasks{
-        margin-left: 468px;
+        margin-left: 30px;
         display: block;
     }
     
-       
+    
+    
+    
+    
+    
+    
+           
 
 }
-   
+
+
+       
